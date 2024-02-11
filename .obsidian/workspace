@@ -1,0 +1,185 @@
+{
+  "main": {
+    "id": "57714e0653bddb3b",
+    "type": "split",
+    "children": [
+      {
+        "id": "2abbbf31c28461a0",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Templates/Job Interview Template.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "98f94fa564025e89",
+    "type": "split",
+    "children": [
+      {
+        "id": "aaf80147d3395fdf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "99a9449ca8f08291",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "6102e74439c69705",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "how we learn in school",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "43493e58a9c60a06",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 292
+  },
+  "right": {
+    "id": "def74882cf497a3d",
+    "type": "split",
+    "children": [
+      {
+        "id": "d151dd9fb75e2206",
+        "type": "tabs",
+        "dimension": 53.805774278215225,
+        "children": [
+          {
+            "id": "448631a341618207",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Templates/Job Interview Template.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "4a8a4e1aa654648e",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "3c07d67dc3eeb620",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "9565f044f239c322",
+        "type": "tabs",
+        "dimension": 46.194225721784775,
+        "children": [
+          {
+            "id": "45719903f1694e75",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Templates/Job Interview Template.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "f0e6772d822bb1d7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Templates/Job Interview Template.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "e0a4a8e833d6da01",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "bd39e341678be74d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Templates/Job Interview Template.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 272
+  },
+  "active": "2abbbf31c28461a0",
+  "lastOpenFiles": [
+    "Templates/Job Interview Template.md",
+    "Templates/General Note Template.md",
+    "Atomic Notes/202112301012 The G.I. Joe Fallacy is the mistaken idea that knowing is half the battle.md",
+    "README.md",
+    "Vocabulary Notes/202201251646 Nocebo.md",
+    "Templates/Writing Template.md",
+    "Templates/Weekly Review Template.md",
+    "Templates/Vocabulary Template.md",
+    "Templates/Project Template.md",
+    "Templates/Meeting Template.md"
+  ]
+}

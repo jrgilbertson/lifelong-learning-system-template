@@ -1,0 +1,10 @@
+{
+  "link-date-to-daily-note": true,
+  "date-picker-week-start": null,
+  "show-archive-all": true,
+  "prepend-archive-date": true,
+  "prepend-archive-format": "YYYYMMDDHHmm",
+  "archive-date-separator": " ",
+  "show-checkboxes": true,
+  "archive-with-date": true
+}

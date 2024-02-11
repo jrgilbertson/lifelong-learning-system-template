@@ -1,0 +1,253 @@
+{
+  "main": {
+    "id": "57714e0653bddb3b",
+    "type": "split",
+    "children": [
+      {
+        "id": "c89520fcd7d2aba8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "21b3a8fa2aea2bfe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "98f94fa564025e89",
+    "type": "split",
+    "children": [
+      {
+        "id": "aaf80147d3395fdf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "99a9449ca8f08291",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6102e74439c69705",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": true,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "byCreatedTime"
+              }
+            }
+          },
+          {
+            "id": "4d60a0dce1edcf49",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "e4d39f216c185150",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f0e6772d822bb1d7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "45719903f1694e75",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "bd39e341678be74d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              }
+            }
+          },
+          {
+            "id": "e0a4a8e833d6da01",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "52677aff38481bf7",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 267.5
+  },
+  "right": {
+    "id": "def74882cf497a3d",
+    "type": "split",
+    "children": [
+      {
+        "id": "d151dd9fb75e2206",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0e8754e6f94d5ea4",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "4a8a4e1aa654648e",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "ce839630c9be0559",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "441e9de0e07aa97a",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 310.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "graph:Open graph view": false,
+      "zk-prefixer:Create new unique note": true,
+      "random-note:Open random note": false,
+      "workspaces:Manage workspace layouts": false,
+      "switcher:Open quick switcher": true,
+      "templates:Insert template": true,
+      "command-palette:Open command palette": true,
+      "audio-recorder:Start/stop recording": false,
+      "canvas:Create new canvas": false,
+      "periodic-notes:Open today": false
+    }
+  },
+  "active": "21b3a8fa2aea2bfe",
+  "lastOpenFiles": [
+    "Vocabulary Notes/202201251646 Nocebo.md",
+    "Structure Notes/202112301003 The Science of Well-Being.md",
+    "Reviews/Daily Notes/2022-06-07.md",
+    "Reviews/Weekly Review/2022-W23.md",
+    "People/John Doe.md",
+    "People/Jane Doe.md",
+    "Meetings/202206071051 Jane 1x1.md",
+    "Literature Notes/Books/How to Take Smart Notes.md",
+    "Atomic Notes/202201101401 Structure, or index, notes in a Zettelkasten create an entry point into a line of thought or topic.md",
+    "Atomic Notes/202112301012 The G.I. Joe Fallacy is the mistaken idea that knowing is half the battle.md",
+    "Templates/Writing Template.md",
+    "Templates/Weekly Review Template.md",
+    "Templates/Vocabulary Template.md",
+    "Templates/Quarterly Review Template.md",
+    "Templates/Project Template.md",
+    "Templates/Person Template.md",
+    "Templates/Monthly Review Template.md",
+    "Templates/Meeting Template.md",
+    "Templates/Literature Template.md",
+    "Templates/Job Opportunity Template.md",
+    "Templates/Job Interview Template.md",
+    "Templates/General Note Template.md",
+    "Templates/Decision Template.md",
+    "Templates/Daily Note Template.md",
+    "README.md",
+    "Reviews/Daily Notes/2024-02-10.md",
+    "Attachments/pronunciation_en_cogent.mp3",
+    "Attachments/Fandom (Oct 2023).pdf",
+    "Attachments/Senior Leaders Copy of RG Values_ Source of Truth Preview Slides.pdf",
+    "Reviews/Monthly Review",
+    "Scripts/time_spent.py",
+    "Attachments/Pasted image 20231228210325.png",
+    "Attachments/Pasted image 20231227094731.png",
+    "Inbox/Untitled.canvas",
+    "Attachments/pronunciation_en_idempotence.mp3",
+    "file_similarity_output.csv",
+    "Attachments/pronunciation_en_virtue.mp3",
+    "Attachments/pronunciation_en_corollary.mp3",
+    "Temp Reviews/Riot's Manager Expectations.pdf",
+    "Attachments/image.png",
+    "Attachments/Screenshot 2023-10-05 at 11.19.09 AM.png",
+    "Attachments/image 10.jpg",
+    "Attachments/image 9.jpg",
+    "Attachments/image 8.jpg",
+    "Attachments/image 7.jpg",
+    "Attachments/image 6.jpg",
+    "Attachments/image 5.jpg",
+    "Untitled.canvas"
+  ]
+}
