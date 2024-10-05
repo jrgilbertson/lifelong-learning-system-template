@@ -4,41 +4,80 @@ date_created:
 date_modified: 
 tags:
   - decision
-title: Decision
+title: Decision Template
 ---
 
-# Decision
+# Decision Template
 
-## Situation
+This decision template combines key elements from various decision-making frameworks, including second-order thinking, Munger's inversion technique, scenario analysis, and the DECIDE model. It offers a comprehensive yet practical approach to complex decision-making.
 
-What is the situation? What unique advantages or insights do I have in this situation?
+Instructions for use:
 
-## Problem
+1. Use this template for significant decisions that have long-term implications or complex consequences.
+2. It's best suited for strategic business decisions, major personal life choices, or any situation with high stakes, and multiple factors need to be considered.
+3. Fill out each section thoughtfully, considering various perspectives and potential outcomes.
+4. Be honest about probabilities and potential risks.
+5. Revisit the retrospective section after sufficient time to learn from the decision's outcomes.
 
-What is the problem?
+## Define the Situation
 
-## Decision
+1. What is the problem or opportunity you're facing
+2. What are the key constraints or parameters?
+3. What are the success criteria?
 
-What is the decision?
+## Identify Options
 
-## Expectation
+Include the status quo, if relevant.
 
-What do you expect to happen? Be specific with probabilities, if possible. Measuring your degree of confidence is vital for learning. Also, don't forget about the opportunity costs of what else you could be doing.
+1. Option A:
+2. Option B:
+3. Option C:
 
-## Thoughts
+## Analysis of Each Option
 
-How do you feel about the situation, both physically and emotionally?
+Use the following structure for each option.
 
-## Alternatives
+### Option A
 
-What alternatives did you seriously consider?
+#### First-Order Consequences
 
----
+1. What are the immediate and direct results of choosing this option? List 2-3 key outcomes that are likely to occur in the short term.
 
-## Outcome
+#### Second-Order Thinking
 
-What actually happened? Create a task in this section to set up a time to revisit the decision.
+1. What might happen next? (2-3 key "And then what?" scenarios)
+2. Who else might be affected, and how might they react?
+
+#### Scenario Analysis
+
+Assign a probability score to each.
+
+1. Best case outcome:
+2. Moderate case outcome:
+3. Worst case outcome:
+
+#### Consensus View
+
+1. How does this option align with or differ from the consensus view?
+2. What if the consensus view is correct?
+
+#### Inversion
+
+1. How could this option lead to failure?
+2. What can be done to prevent or mitigate these risks?
+
+## Decision and Rationale
+
+1. Which option is chosen and why?
+2. How does it compare to the other options regarding potential outcomes and risks?
+
+## Next Steps
+
+1. What are the immediate actions to implement this decision?
+2. How will you monitor its effectiveness?
 
 ## Retrospective
 
-What did I learn?
+1. What happened?
+2. How did the outcomes compare to your expectations?
+3. What lessons were learned?

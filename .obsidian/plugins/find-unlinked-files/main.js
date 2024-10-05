@@ -416,8 +416,8 @@ var Utils = class {
   isFileToIgnore() {
     return this.filesToIgnore.contains(this.filePath);
   }
-  isValid() {
-    return !this.hasTagsToIgnore() && !this.hasLinksToIgnore() && !this.checkDirectory() && !this.isFileToIgnore();
+  shouldIgnoreFile() {
+    return this.hasTagsToIgnore() || this.hasLinksToIgnore() || this.checkDirectory() || this.isFileToIgnore();
   }
   /**
    * Writes the text to the file and opens the file in a new pane if it is not opened yet
@@ -523,12 +523,12 @@ var FindOrphanedFilesPlugin = class extends import_obsidian4.Plugin {
       callback: () => this.deleteEmptyFiles()
     });
     this.addSettingTab(new SettingsTab(this.app, this, DEFAULT_SETTINGS));
-    this.app.workspace.on("file-menu", (menu, file, source, leaf) => {
+    this.app.workspace.on("file-menu", (menu, file, _, __) => {
       if (file instanceof import_obsidian4.TFolder) {
         menu.addItem((cb) => {
           cb.setIcon("search");
           cb.setTitle("Find orphaned files");
-          cb.onClick((e) => {
+          cb.onClick((_2) => {
             this.findOrphanedFiles(file.path + "/");
           });
         });
@@ -580,7 +580,7 @@ var FindOrphanedFilesPlugin = class extends import_obsidian4.Plugin {
     const files = this.app.vault.getFiles();
     const emptyFiles = [];
     for (const file of files) {
-      if (!new Utils(
+      if (new Utils(
         this.app,
         file.path,
         [],
@@ -588,7 +588,7 @@ var FindOrphanedFilesPlugin = class extends import_obsidian4.Plugin {
         this.settings.emptyFilesDirectories,
         this.settings.emptyFilesFilesToIgnore,
         this.settings.emptyFilesIgnoreDirectories
-      ).isValid()) {
+      ).shouldIgnoreFile()) {
         continue;
       }
       const content = await this.app.vault.read(file);
@@ -618,31 +618,70 @@ var FindOrphanedFilesPlugin = class extends import_obsidian4.Plugin {
       this.settings.openOutputFile
     );
   }
-  findOrphanedFiles(dir) {
+  async findOrphanedFiles(dir) {
+    const startTime = Date.now();
     const outFileName = this.settings.outputFileName + ".md";
-    let outFile;
-    const files = this.app.vault.getFiles();
+    let outFile = null;
+    const allFiles = this.app.vault.getFiles();
     const markdownFiles = this.app.vault.getMarkdownFiles();
-    const links = [];
-    markdownFiles.forEach((markFile) => {
-      if (markFile.path == outFileName) {
-        outFile = markFile;
+    const canvasFiles = allFiles.filter(
+      (file) => file.extension === "canvas"
+    );
+    const links = /* @__PURE__ */ new Set();
+    const findLinkInTextRegex = /\[\[(.*?)\]\]|\[.*?\]\((.*?)\)/g;
+    const canvasParsingPromises = canvasFiles.map(
+      async (canvasFile) => {
+        var _a;
+        const canvasFileContent = JSON.parse(
+          await this.app.vault.cachedRead(canvasFile) || "{}"
+        );
+        (_a = canvasFileContent.nodes) == null ? void 0 : _a.forEach((node) => {
+          var _a2;
+          let linkTexts = [];
+          if (node.type === "file") {
+            linkTexts.push(node.file);
+          } else if (node.type === "text") {
+            let match;
+            while ((match = findLinkInTextRegex.exec(node.text)) !== null) {
+              linkTexts.push((_a2 = match[1]) != null ? _a2 : match[2]);
+            }
+          } else {
+            return;
+          }
+          linkTexts.forEach((linkText) => {
+            const targetFile = this.app.metadataCache.getFirstLinkpathDest(
+              linkText.split("|")[0].split("#")[0],
+              canvasFile.path
+            );
+            if (targetFile != null)
+              links.add(targetFile.path);
+          });
+        });
+      }
+    );
+    markdownFiles.forEach((mdFile) => {
+      var _a, _b, _c;
+      if (outFile === null && mdFile.path == outFileName) {
+        outFile = mdFile;
         return;
       }
-      (0, import_obsidian4.iterateCacheRefs)(
-        this.app.metadataCache.getFileCache(markFile),
-        (cb) => {
-          const txt = this.app.metadataCache.getFirstLinkpathDest(
-            (0, import_obsidian4.getLinkpath)(cb.link),
-            markFile.path
-          );
-          if (txt != null)
-            links.push(txt.path);
-        }
-      );
+      const cache = this.app.metadataCache.getFileCache(mdFile);
+      for (const ref of [
+        ...(_a = cache.embeds) != null ? _a : [],
+        ...(_b = cache.links) != null ? _b : [],
+        ...(_c = cache.frontmatterLinks) != null ? _c : []
+      ]) {
+        const txt = this.app.metadataCache.getFirstLinkpathDest(
+          (0, import_obsidian4.getLinkpath)(ref.link),
+          mdFile.path
+        );
+        if (txt != null)
+          links.add(txt.path);
+      }
     });
-    const notLinkedFiles = files.filter(
-      (file) => this.isValid(file, links, dir)
+    await Promise.all(canvasParsingPromises);
+    const notLinkedFiles = allFiles.filter(
+      (file) => this.isFileAnOrphan(file, links, dir)
     );
     notLinkedFiles.remove(outFile);
     let text = "";
@@ -661,6 +700,13 @@ var FindOrphanedFilesPlugin = class extends import_obsidian4.Plugin {
       text,
       this.settings.openOutputFile
     );
+    const endTime = Date.now();
+    const diff = endTime - startTime;
+    if (diff > 1e3) {
+      new import_obsidian4.Notice(
+        `Found ${notLinkedFiles.length} orphaned files in ${diff}ms`
+      );
+    }
   }
   async deleteOrphanedFiles() {
     var _a, _b;
@@ -735,7 +781,7 @@ var FindOrphanedFilesPlugin = class extends import_obsidian4.Plugin {
         this.settings.unresolvedLinksFilesToIgnore,
         this.settings.unresolvedLinksIgnoreDirectories
       );
-      if (!utils.isValid())
+      if (utils.shouldIgnoreFile())
         continue;
       for (const link in brokenLinks[sourceFilepath]) {
         const linkFileType = link.substring(link.lastIndexOf(".") + 1);
@@ -782,7 +828,7 @@ var FindOrphanedFilesPlugin = class extends import_obsidian4.Plugin {
     const files = this.app.vault.getMarkdownFiles();
     let withoutFiles = files.filter((file) => {
       var _a;
-      if (new Utils(
+      const utils = new Utils(
         this.app,
         file.path,
         [],
@@ -790,11 +836,11 @@ var FindOrphanedFilesPlugin = class extends import_obsidian4.Plugin {
         this.settings.withoutTagsDirectoriesToIgnore,
         this.settings.withoutTagsFilesToIgnore,
         true
-      ).isValid()) {
-        return ((_a = (0, import_obsidian4.getAllTags)(this.app.metadataCache.getFileCache(file)).length) != null ? _a : 0) <= 0;
-      } else {
+      );
+      if (utils.shouldIgnoreFile()) {
         return false;
       }
+      return ((_a = (0, import_obsidian4.getAllTags)(this.app.metadataCache.getFileCache(file)).length) != null ? _a : 0) <= 0;
     });
     withoutFiles.remove(outFile);
     let prefix;
@@ -816,8 +862,8 @@ var FindOrphanedFilesPlugin = class extends import_obsidian4.Plugin {
    * @param file file to check
    * @param links all links in the vault
    */
-  isValid(file, links, dir) {
-    if (links.contains(file.path))
+  isFileAnOrphan(file, links, dir) {
+    if (links.has(file.path))
       return false;
     if (file.extension == "css")
       return false;
@@ -843,7 +889,7 @@ var FindOrphanedFilesPlugin = class extends import_obsidian4.Plugin {
       this.settings.ignoreDirectories,
       dir
     );
-    if (!utils.isValid())
+    if (utils.shouldIgnoreFile())
       return false;
     return true;
   }

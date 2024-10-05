@@ -1,5 +1,5 @@
 ---
-aliases: []
+aliases: 
 date_created: 
 date_modified: 
 tags: []
@@ -14,7 +14,5 @@ title: Title
 - Full Title:
 - Category: #articles or #books or #videos
 - URL:
-
-## Comments
 
 ## Highlights

@@ -15,7 +15,7 @@
               "state": {
                 "file": "README.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
             }
           }
@@ -148,34 +148,10 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0e8754e6f94d5ea4",
-            "type": "leaf",
-            "state": {
-              "type": "copilot-chat-view",
-              "state": {}
-            }
-          },
-          {
             "id": "4a8a4e1aa654648e",
             "type": "leaf",
             "state": {
               "type": "calendar",
-              "state": {}
-            }
-          },
-          {
-            "id": "ce839630c9be0559",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {}
-            }
-          },
-          {
-            "id": "441e9de0e07aa97a",
-            "type": "leaf",
-            "state": {
-              "type": "smart-connections-view",
               "state": {}
             }
           }
@@ -201,6 +177,20 @@
   },
   "active": "21b3a8fa2aea2bfe",
   "lastOpenFiles": [
+    "Templates/Daily Note Template.md",
+    "Templates/Decision Template.md",
+    "Templates/General Note Template.md",
+    "Templates/Job Interview Template.md",
+    "Templates/Job Opportunity Template.md",
+    "Templates/Meeting Template.md",
+    "Templates/Person Template.md",
+    "Templates/Project Template.md",
+    "Templates/Reference Template.md",
+    "Templates/Vocabulary Template.md",
+    "Templates/Weekly Review Template.md",
+    "Templates/Writing Template.md",
+    "Templates/Quarterly Review Template.md",
+    "README.md",
     "Vocabulary Notes/202201251646 Nocebo.md",
     "Structure Notes/202112301003 The Science of Well-Being.md",
     "Reviews/Daily Notes/2022-06-07.md",
@@ -211,22 +201,8 @@
     "Literature Notes/Books/How to Take Smart Notes.md",
     "Atomic Notes/202201101401 Structure, or index, notes in a Zettelkasten create an entry point into a line of thought or topic.md",
     "Atomic Notes/202112301012 The G.I. Joe Fallacy is the mistaken idea that knowing is half the battle.md",
-    "Templates/Writing Template.md",
-    "Templates/Weekly Review Template.md",
-    "Templates/Vocabulary Template.md",
-    "Templates/Quarterly Review Template.md",
-    "Templates/Project Template.md",
-    "Templates/Person Template.md",
     "Templates/Monthly Review Template.md",
-    "Templates/Meeting Template.md",
     "Templates/Literature Template.md",
-    "Templates/Job Opportunity Template.md",
-    "Templates/Job Interview Template.md",
-    "Templates/General Note Template.md",
-    "Templates/Decision Template.md",
-    "Templates/Daily Note Template.md",
-    "README.md",
-    "Reviews/Daily Notes/2024-02-10.md",
     "Attachments/pronunciation_en_cogent.mp3",
     "Attachments/Fandom (Oct 2023).pdf",
     "Attachments/Senior Leaders Copy of RG Values_ Source of Truth Preview Slides.pdf",

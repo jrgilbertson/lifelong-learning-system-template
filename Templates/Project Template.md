@@ -4,101 +4,256 @@ date_created:
 date_modified: 
 tags:
   - project
-title: Project Name
+title: Project Template
 ---
 
-# Project Name
+# Project Template
 
-## Guidance
+## Overview
 
-This project design template is a strategic tool designed to guide teams through planning, executing, and successfully completing projects. It emphasizes the importance of adaptability, feedback, and continuous improvement as fundamental components of effective project management.
+This project template, also on GitHub ([link](https://github.com/jrgilbertson/lifelong-learning-system-template/blob/main/Templates/Project%20Template.md)), helps teams navigate each phase of a data project, from planning to deployment and post-launch evaluation. It emphasizes adaptability, feedback, and continuous improvement in project management.
 
-A word of caution—completing this document should not be mistaken for thorough project planning. It's a dynamic tool meant to evolve alongside your project.
+This template isn't just a document to fill out. It's a tool to guide your thinking, facilitate crucial conversations with stakeholders, and ensure you've considered all critical aspects of your project before starting.
 
-**Project Lead Tips:**
+This template is a guide, not a rigid set of instructions. It provides structure but does not dictate every step. Projects evolve, and so should your approach. Remain flexible and adapt the template to fit your project's needs rather than forcing it to fit the template.
 
-1. **Flexibility:** This template is a foundational guide, not a strict rulebook. It's designed to be adjusted and adapted to fit your project's unique needs and challenges.
-2. **Valuable Feedback:** Not all feedback will be equally useful, but every input is an opportunity to learn. Prioritize insights that align with your project goals, but remain open to unexpected lessons.
-3. **Team Collaboration:** Project leadership involves guiding the vision and structure of your initiative, but achieving your goals is a team effort. Encourage ownership by delegating sections of this document to team members.
-4. **Document Autonomy:** This template should serve as a comprehensive resource for anyone involved in or joining the project at any stage, facilitating onboarding, stakeholder meetings, and project reviews without requiring additional explanation.
+**Project lead tips:**
 
-**Leadership Tips:**
+- Be flexible and adjust the template as needed. This template is a starting point and guide, not a prescriptive destination.
+- Not all feedback is useful, but you can never learn _less_ by listening and gathering input.
+- Collaborate on the design. As the project lead, you should own the overall structure and voice, but don't write everything yourself. Involve your team by assigning section ownership.
+- This document needs to stand alone. It helps with onboarding, meeting new stakeholders, and project reviews.
+- Incorporate feedback loops in key phases, particularly during development and testing, to ensure the project aligns with technical and business goals.
 
-1. **Engagement:** Post-reading, engage in a detailed walkthrough of this document with your team, sans slides, to foster a deeper understanding and alignment on project goals and strategies.
-2. **Beyond Checkboxes:** Encourage your team to approach this document as a living record of their planning and thought processes, not just a formality to be completed.
-3. **Contextual Clarity:** Providing clear, upfront context about project expectations and directions can significantly impact your team's motivation and alignment. Misalignments can occur; when they do, own them, clarify, and realign.
-4. **Project Visibility:** Keep this document and your project's progress visible and accessible. Encouraging an environment where projects are openly shared allows others to learn from, contribute to, and build upon existing work.
+**Leadership tips:**
 
-## High-Level Overview
+- After thoroughly reading the document, ask your team to review it. Don't use slides.
+- Avoid setting OKRs and goals that focus on completing the document. There's a fine line between incentivizing your team to gather feedback and think through solutions and filling it out to complete a task.
+- Provide your team with as much context upfront as possible. It's demotivating for a group to work on a design for weeks only to hear they went in a wildly different direction than expected. It's your responsibility when this happens, so seek further clarity and set better expectations.
+- Incentivize your team to keep this document updated throughout the project. If your culture allows, encourage them to make projects discoverable so others can build on their work.
+- Encourage ownership, not just accountability. While accountability ensures tasks are completed, ownership fosters a deeper connection to the project's success. Involve your team members in decision-making and give them autonomy to solve problems. When people feel ownership, they're more likely to proactively address challenges and innovate rather than complete tasks to meet deadlines.
 
-- **Definition:** This section serves as the executive summary of your project, succinctly capturing its essence, goals, and value proposition in one to two sentences. It's the elevator pitch of your project, setting the stage for the detailed planning that follows by clearly articulating the project's purpose, its significance to stakeholders, and the metrics by which success will be measured.
-- **Nature:** Strategic and foundational, providing a concise overview aligning stakeholders with the project's core objectives and anticipated impact.
-- **Example:** "Our project aims to implement an advanced recommender system, enhancing user content engagement by personalizing selections, with the goal of boosting user engagement by 30% and increasing retention rates by 20% within the first year."
+## Project Name
+
+Provide a one-sentence overview that emphasizes customer value and defines success.
 
 ## Problem Statement
 
-- **Definition:** The problem statement identifies and articulates the key issues or opportunities that the project seeks to address. It lays the groundwork for the project by detailing existing challenges, the necessity of the project for solving these issues, and the potential benefits of the project's successful execution. This section is essential for justifying the project's initiation and rallying stakeholder support around a shared understanding of the objectives.
-- **Nature:** Analytical and diagnostic, highlighting the discrepancy between the current state and the desired future state, thereby establishing the project's rationale and urgency.
-- **Example:** "The existing approach to content delivery employs a one-size-fits-all strategy that fails to engage a diverse user base, leading to decreased user activity and retention. We anticipate significantly enhancing the user experience by implementing a personalized recommender system, thus encouraging more prolonged and frequent engagement."
+Clearly understand the project's rationale and value. Think expansively rather than reductively at first. For example, ask questions like, "In a perfect world with this data and a great prediction, what would you do?" Rarely is a specific stakeholder ask the right problem to solve. This statement may evolve as you gain insights throughout the project. Here's a starting framework:
+
+- **Situation**: Describe the current context, e.g., "Our platform has experienced increased traffic, but we are not seeing a corresponding rise in conversion rates."
+- **Complication**: Articulate the core challenge, e.g., "Despite the increased traffic, conversion rates have stagnated, affecting revenue growth."
+- **Solution**: Outline the high-level solution, e.g., "We need to develop a recommendation engine to improve the user experience and boost conversions."
+
+**Tip:** _"Far better an approximate answer to the right question, which is often vague, than an exact answer to the wrong question…"_—John Tukey.
+
+**Tip:** Stop and seek clarity if you don't understand why you are doing this work.
+
+## Current Solutions and Lessons Learned
+
+### Existing Methods
+
+- **Current Solutions**: Summarize past problem-solving efforts, including current solutions. What happens if you don't do this work? A current "good enough" solution is often "good enough." Remember that a yes on your time is a no to other opportunities.
+- **Limitations**: Highlight the shortcomings of these methods and explain why new approaches are needed.
+
+### Insights From Related Past Projects
+
+- **What Worked**: Reflect on successful past projects and how those lessons apply here.
+- **What Didn't Work**: Acknowledge past issues to avoid them in this project.
+
+**Tip:** Learn from past efforts and comparable products.
+
+**Tip:** Get the basics right. _"It is remarkable how much long-term advantage people like us have gotten by trying to be consistently not stupid, instead of trying to be very intelligent."_—Charlie Munger.
 
 ## Objectives and Outcomes
 
-- **Definition:** This section outlines the project's strategic goals (objectives) and the expected benefits or changes resulting from achieving these goals (outcomes). Objectives should be aligned with the broader aims of the business or organization. At the same time, outcomes should provide a clear vision of the project's intended impact, detailing how the successful completion of the project will improve current conditions or solve existing problems.
-- **Nature:** Forward-looking and goal-oriented, defining specific targets for the project and outlining the anticipated benefits to stakeholders.
-- **Example:** "Objective: Develop and deploy a machine learning-based recommender system to personalize user content feeds, thereby enhancing user engagement and satisfaction. Outcome: Achieve a 25% increase in average user session time and a 15% rise in monthly active users within six months of system deployment."
+### Objectives
 
-## Deliverables
+Define and link the project's strategic, long-term goals to broader company goals.
 
-- **Definition:** Deliverables refer to the tangible or intangible products, services, or results that the project will produce. This section specifies what the project will deliver upon completion, linking these outputs directly to the project's objectives to illustrate how the deliverables contribute to achieving the desired outcomes.
-- **Nature:** Concrete and outcome-focused, clearly defining the end products or results of the project efforts.
-- **Example:** "The project will deliver a fully operational, machine learning-based recommender system, integrated seamlessly into the existing content platform. Additionally, comprehensive documentation on the system's architecture and algorithms and a detailed user guide for system administrators will be provided."
+- **Objective 1**: e.g., "Increase revenue by improving customer experience."
+- **Objective 2**: Additional objectives as necessary.
 
-## Stakeholders and Roles and Responsibilities
+### Outcomes
 
-- **Definition:** Identifies all parties with a vested interest in the project, detailing their roles, responsibilities, and expected contributions. This section is crucial for clarifying the project's governance structure, ensuring that all participants understand their roles and expectations.
-- **Nature:** Clarifying and organizational, establishing a clear framework for project governance and accountability.
-- **Example:** "Project Sponsor: Provides overall direction and resources. Data Science Team: Leads the development of the recommender algorithm. Engineering Team: Responsible for integrating the algorithm into the platform. End Users: Offer feedback and insights to refine the system."
+Specify the measurable, short-term outcomes for success and corresponding Key Performance Indicators (KPIs).
 
-## Schedule and Milestones
+- **Outcome 1**: e.g., "Achieve a 10% increase in conversion rates in six months."
+- **Outcome 2**: Additional outcomes as necessary.
 
-- **Definition:** Outlines the anticipated timeline for the project, including key milestones, deadlines for each significant phase, and any dependencies that might impact the project schedule. This framework is vital for planning, tracking progress, and ensuring timely project execution.
-- **Nature:** Temporal and structured, offering a chronological blueprint for the project's execution.
-- **Example:** "Milestone 1: Complete the initial data collection and preprocessing by the end of Q1. Milestone 2: Develop and test the recommender system algorithm by the end of Q2. Final Milestone: Fully integrate the recommender system and launch it to users by the end of Q3."
+**Tip:** If you don't understand the high-level goals, keep iterating. They are often very abstract, and it's up to you and the team to refine and articulate them.
+
+## Scope
+
+### In Scope
+
+Clearly define the project's scope to ensure focus and clarity.
+
+- **Feature 1**: e.g., "Developing a machine learning model for personalized recommendations."
+- **Feature 2**: Additional in-scope features.
+
+### Out of Scope
+
+Define what is deliberately excluded to prevent scope creep.
+
+- **Exclusion 1**: e.g., "Redesigning the entire user interface."
+- **Exclusion 2**: Additional exclusions as necessary.
+
+## Stakeholders and Roles
+
+### Stakeholders
+
+List the key stakeholders involved in the project. The full design must be reviewed with them. They are essential for establishing guidelines, approving requirements and timelines, and giving feedback on the details critical to the project's success.
+
+| Stakeholder   | Name | Responsibilities | Approval Status |
+| ------------- | ---- | ---------------- | --------------- |
+| Stakeholder 1 |      |                  |                 |
+| Stakeholder 2 |      |                  |                 |
+| Stakeholder 3 |      |                  |                 |
+
+### Roles
+
+List the key roles required for the project.
+
+| Role   | Name(s) | Responsibilities |
+| ------ | ------- | ---------------- |
+| Role 1 |         |                  |
+| Role 2 |         |                  |
+| Role 3 |         |                  |
+
+**Tip:** Don't start development until the scope is _finalized-ish_. You'll know when you're ready. Feedback helps refine the design and encourages people to invest in the results.
 
 ## Requirements
 
 ### Functional Requirements
 
-- **Definition:** Specifies the behaviors, features, and functionalities the project's deliverables must exhibit to satisfy user and stakeholder needs effectively. These requirements focus on what the system is expected to do, from operational functions to user interactions.
-- **Nature:** Detailed and user-focused, guiding the development of systems that meet specific user needs and project objectives.
-- **Example:** "The recommender system must dynamically process user interactions, tailor content recommendations in real-time, and support scalability to accommodate up to 100,000 concurrent users without compromising performance."
+What does the system do? Define the business and technical functionalities required to meet the project objectives.
 
-### Technical Requirements
+- **Business Functionality**: e.g., "Business stakeholders need weekly reports on customer churn predictions."
+- **Technical Functionality**: e.g., "The system shall generate personalized product recommendations based on user activity."
 
-- **Definition:** Details the technical specifications, standards, and environmental conditions that the project must adhere to. This includes requirements for software and hardware, integration protocols, security standards, and performance criteria, ensuring that the project aligns with technical feasibility and industry standards.
-- **Nature:** Precise and technical, ensuring the project's deliverables are technically viable and secure.
-- **Example:** "The system will be developed on a scalable cloud computing platform, utilizing data encryption for security, adhering to GDPR for data privacy, and featuring API integration for compatibility with existing content management systems."
+**Tip:** Include business _and_ technical functionality. Too often, when technical design is separate from product design, the functional requirements are overly technical. This can lead to unintentional scope creep and misaligned deliverables.
 
-## Budget and Resources
+### Non-Functional Requirements
 
-- **Definition:** Provides a comprehensive financial overview and resource allocation plan for the project, emphasizing the importance of accurate budget forecasting and strategic resource management. This section includes a breakdown of expected costs and a detailed listing of the material, technological, and human resources required for project success, highlighting the necessity of strategic planning in resource allocation to maximize efficiency and return on investment.
-- **Nature:** Quantitative and strategic, ensuring the project is well-supported financially and materially.
-- **Example:** "The project is budgeted at $1.2 million, covering data acquisition, development, integration, and deployment phases. Required resources include a team of data scientists for algorithm development, software engineers for system integration, and cloud computing infrastructure for hosting the system."
+How should the system do it? Outline the performance, scalability, and other critical constraints it must meet.
 
-## Communication Plan and Stakeholder Engagement
+- **Performance**: e.g., "System must generate recommendations within 100ms."
+- **Scalability**: e.g., "System should support up to 10,000 concurrent users."
+- **Compliance**: e.g., "Must comply with GDPR regulations for data privacy."
 
-- **Definition:** Outlines a comprehensive strategy for effective information exchange and stakeholder involvement throughout the project lifecycle. This plan includes mechanisms for regular updates, feedback loops, and collaborative decision-making processes, ensuring that stakeholders remain informed, engaged, and aligned with the project's progress and outcomes.
-- **Nature:** Inclusive and communicative, fostering transparency, collaboration, and stakeholder buy-in.
-- **Example:** "Communication strategies include weekly progress updates via email, monthly stakeholder engagement meetings to gather input and adjust strategies as needed, and a dedicated project channel on Slack for daily communication and rapid feedback."
+## System Design and Architecture
+
+This section outlines a general approach for most data and engineering projects. What will this look like when finished? Be specific—diagrams, a picture or handwritten design, dashboard mocks, etc. Ideally, link to pre-existing resources. The design should evolve as the project progresses.
+
+### Architecture Overview
+
+Provide an overview of the system's architecture and design. Encourage early sketches and refinement over time.
+
+- **System Diagram**: Include an early sketch of the system design. This diagram can evolve with user feedback and testing results.
+- **Components**: Describe the main components, such as data storage, processing units, and user interfaces.
+
+### Inputs, Algorithms, and Outputs
+
+Define the inputs, algorithm, and outputs for the system.
+
+- **Inputs**: e.g., "User activity logs from `/data/logs/user_activity/` in JSON format." Document if sources are unknown.
+- **Algorithms:** e.g., "The recommendation system uses collaborative filtering, specifically matrix factorization, to generate personalized product recommendations. It processes user-item interaction data, factorizes it into lower-dimensional user and item matrices, and uses these matrices to predict user preferences for unseen items. The model is retrained weekly on historical data and updated daily with incremental learning on new user interactions."
+- **Outputs**: e.g., "Recommendation lists stored in Redis using the following structure:
+    - Key: `user:<user_id>:recommendations`
+    - Value: JSON string of recommendation data
+    - Example:
+
+        ```python
+        Key: user:12345:recommendations
+        Value: {
+          "timestamp": "2023-06-15T14:30:00Z",
+          "rec_items": ["item1", "item2", "item3"],
+          "rec_scores": [0.95, 0.85, 0.75],
+          "model_version": "v1.2"
+        }
+        ```
+
+    - Each Redis entry represents a set of personalized recommendations for a specific user at a given time. The JSON string contains the following fields:
+        - `timestamp`: Time recommendations were generated.
+        - `rec_items`: List of recommended item IDs.
+        - `rec_scores`: Corresponding recommendation scores.
+        - `model_version`: Version of the model used for recommendations."
+
+**Tip:** It can be tempting to spend too much time on algorithms during a project, so use this documentation to set guardrails.
+
+### Product Usage
+
+Explain how the system will be used and integrated into the broader ecosystem.
+
+- **Usage Scenarios**: e.g., "After logging in, users receive personalized product recommendations on their homepage."
+- **Interacting Systems**: e.g., "E-commerce platform frontend for displaying recommendations."
+
+## Deliverables
+
+What are the final deliverables? They should be linked to objectives and outcomes and agreed upon with stakeholders. Based on feedback and project progress, they may be adjusted or reprioritized.
+
+- **Deliverable 1**: e.g., "Deployed recommendation engine integrated into the e-commerce platform."
+- **Deliverable 2**: e.g., "Comprehensive documentation, including technical specifications and user guides."
+- **Deliverable 3**: e.g., "Training sessions for relevant teams on system usage and maintenance."
+
+## Milestone Plan
+
+This plan outlines key project milestones with target dates. The team will determine how to achieve these through their preferred sprint or work cycle structure. Target dates may shift as the project progresses and the team learns more, notably in Agile environments. Regular check-ins will help stay aligned and adjust the plan. Covering the "what" and "when" in a milestone plan is important.
+
+| Milestone   | Description                                                          | Jira Epic(s)       | Deliverable(s)              | Due Date |
+| ----------- | -------------------------------------------------------------------- | ------------------ | --------------------------- | -------- |
+| Planning    | Finalize project plan and gather approvals                           | \[Jira Epic Link\] | Project Plan Document       | \[Date\] |
+| Design      | Complete system design and architecture                              | \[Jira Epic Link\] | System Architecture Diagram | \[Date\] |
+| Development | Develop core functionalities                                         | \[Jira Epic Link\] | Working Prototype           | \[Date\] |
+| Testing     | Perform unit and integration testing; incorporate feedback           | \[Jira Epic Link\] | Test Reports                | \[Date\] |
+| Deployment  | Deploy system to production                                          | \[Jira Epic Link\] | Deployed System             | \[Date\] |
+| Training    | Train users and stakeholders                                         | \[Jira Epic Link\] | Training Materials          | \[Date\] |
+| Evaluation  | Assess performance against success metrics; refine based on feedback | \[Jira Epic Link\] | Evaluation Report           | \[Date\] |
+| Closure     | Complete documentation and handover                                  | \[Jira Epic Link\] | Project Close-Out Document  | \[Date\] |
+
+**Tip:** Each epic should represent a significant, distinct functionality or body of work within the project.
 
 ## Risk Management
 
-- **Definition:** Establishes a systematic approach to identifying, assessing, and mitigating risks that could impact the project's success. This proactive strategy involves analyzing potential risks, determining their likelihood and potential impact, and developing plans to address these risks effectively, ensuring the project's resilience and preparedness for unforeseen challenges.
-- **Nature:** Proactive and preventative, aimed at minimizing project vulnerabilities and enhancing adaptability.
-- **Example:** "Identified risk: Potential delays in data acquisition due to evolving data privacy regulations. Mitigation strategy includes early engagement with data privacy experts, developing a flexible project timeline to accommodate regulatory review, and exploring alternative data sources as needed."
+Identify potential risks and mitigation strategies.
 
-## Close-Out and Maintenance
+- **Risk 1**: e.g., "Data privacy breaches from improper handling of user data."
+    - **Likelihood**: Medium
+    - **Impact**: High
+    - **Mitigation Plan**: Implement strict access controls, data encryption, and regular security audits.
+- **Risk 2**: e.g., "Model accuracy not meeting performance criteria."
+    - **Likelihood**: Medium
+    - **Impact**: Medium
+    - **Mitigation Plan**: Allocate time for model tuning, use cross-validation, and plan for multiple iterations.
 
-- **Definition:** Describes the processes and activities involved in formally concluding the project, documenting its successes and lessons learned, and transitioning to ongoing operations or maintenance. This section emphasizes the importance of evaluating project outcomes, ensuring the deliverables' sustainability, and establishing a framework for continuous improvement, including regular reviews and updates to adapt to changing user needs and technological advancements.
-- **Nature:** Conclusive and forward-looking, focusing on securing the project's long-term impact and adaptability.
-- **Example:** "Upon project completion, a comprehensive post-deployment review is conducted to evaluate the system's performance and user satisfaction. A dedicated maintenance team is established to provide ongoing support, monitor system effectiveness, and implement necessary updates and improvements, ensuring the recommender system continues to meet user needs and remains at the forefront of technological advancements."
+## Ethics, Security, and Compliance
+
+### Ethical Considerations
+
+Evaluate the ethical implications of the project.
+
+- **Bias and Fairness**: e.g., "Ensure the recommendation engine doesn't favor certain user groups."
+
+### Security Measures
+
+Ensure the system follows security best practices.
+
+- **Data Protection**: e.g., "Encrypt all stored user data using AES-256."
+
+### Compliance Requirements
+
+Ensure the system complies with regulatory standards.
+
+- **Compliance**: e.g., "Ensure GDPR and CCPA compliance for user data handling."
+
+## Close-Out Plan
+
+### Project Completion
+
+Ensure stakeholders complete and accept all agreed-upon deliverables.
+
+### Maintenance and Handover
+
+- **Ongoing Maintenance**: Plan for system monitoring, updates, runbooks, and support.
+- **Handover Plan**: Provide thorough documentation and training if the project is handed off to another team.
