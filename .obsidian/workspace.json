@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c89520fcd7d2aba8",
+        "id": "622042ad3bc69e04",
         "type": "tabs",
         "children": [
           {
-            "id": "21b3a8fa2aea2bfe",
+            "id": "2bdab3d9938c8bc6",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -175,8 +175,9 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "21b3a8fa2aea2bfe",
+  "active": "2bdab3d9938c8bc6",
   "lastOpenFiles": [
+    "README.md",
     "Templates/Daily Note Template.md",
     "Templates/Decision Template.md",
     "Templates/General Note Template.md",
@@ -190,7 +191,6 @@
     "Templates/Weekly Review Template.md",
     "Templates/Writing Template.md",
     "Templates/Quarterly Review Template.md",
-    "README.md",
     "Vocabulary Notes/202201251646 Nocebo.md",
     "Structure Notes/202112301003 The Science of Well-Being.md",
     "Reviews/Daily Notes/2022-06-07.md",
